@@ -1,1 +1,1 @@
-{"version":3,"sources":["partials/_modules.scss","main.css"],"names":[],"mappings":"AAAA,GACE,SCCF,CDFA,KAGI,aCGJ","file":"main.css","sourcesContent":["h1 {\n  color: red;\n  p{\n    color: blueviolet;\n  }\n}","h1 {\n  color: red;\n}\n\nh1 p {\n  color: blueviolet;\n}\n"]}
+{"version":3,"sources":["partials/_reset.scss","main.css"],"names":[],"mappings":"AAAC,EACE,QAAS,CACT,SAAU,CACV,qBCCH","file":"main.css","sourcesContent":[" * {\n   margin: 0;\n   padding: 0;\n   box-sizing: border-box;\n }","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n"]}
