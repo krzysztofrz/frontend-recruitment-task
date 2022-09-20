@@ -20,7 +20,9 @@ btn.onclick = function() {
     counter++
     localStorage.setItem("someVarKey", counter);
 
-    showCounter.textContent = `You clicked ${counter} times`
+    let times;
+
+    showCounter.textContent = `You clicked ${counter} ${counter == 1 ? times = "time" : times = "times" } `
 
     if (counter >= 5){
         console.log(mainAlert)
