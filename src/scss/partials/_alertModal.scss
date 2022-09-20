@@ -1,24 +1,5 @@
-//****** MAIN SECTION ******
-@media (min-width: $breakpoint-smartphone320){
-  body {
-    background: lightcyan;
-  }
-  .contentTitle{
-    color: blue;
-  }
-}
-
-
-//******** MODAL ******
-
-#myBtn{
-  padding: 10px 15px;
-}
-
-
-
 /* The Modal (background) */
-.modal {
+.modalAlert {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -29,15 +10,32 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  //position: relative;
+
 }
 
 /* Modal Content/Box */
-.modal-content {
+.modal-content-alert {
+  position: relative;
+
+  //width: 200px;
+  //height: 100px;
+
+  //left: 100px;
   background-color: #fefefe;
+  //background: blue;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+.alertText{
+  font-weight: 400;
+  display: block;
+  margin: 0 20px 20px;
+  font-size: 16px;
+
 }
 
 /* The Close Button */
@@ -46,6 +44,16 @@
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+.alert{
+  font-weight: 700;
+  margin: 20px;
+  font-size: 30px;
+}
+.showCounter{
+  margin: 0 20px 20px;
+  font-size: 16px;
 }
 
 .close:hover,

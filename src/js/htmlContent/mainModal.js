@@ -5,7 +5,10 @@ mainSection.insertAdjacentHTML('beforeend', `
 
     <!-- your HTML goes here -->    
              <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+ <div class="mainBtn">
+    <button id="myBtn">Click me!</button>
+</div>
+
 
 
 <!-- The Modal -->
@@ -14,7 +17,7 @@ mainSection.insertAdjacentHTML('beforeend', `
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p class="alert">Alert...</p>
     <p class="showCounter"></p>
   </div>
 

@@ -1,8 +1,35 @@
-import"/src/js/htmlContent/mainSection.js";import"/src/js/htmlContent/mainModal.js";let modal=document.querySelector(".modal"),showCounter=document.querySelector(".showCounter"),btn=document.getElementById("myBtn"),span=(console.log("show"),console.log(btn),document.getElementsByClassName("close")[0]),counter="0";btn.onclick=function(){modal.style.display="block",counter++,console.log(counter),localStorage.setItem("someVarKey",counter),showCounter.textContent="liczba kliniec to "+counter},counter=localStorage.getItem("someVarKey"),span.onclick=function(){modal.style.display="none"},window.onclick=function(e){e.target==modal&&(modal.style.display="none")},console.log("mainModal");const mainModal=document.querySelector("#mainModal"),mainSection=(mainSection.insertAdjacentHTML("beforeend",`                                      
+import"/src/js/htmlContent/mainSection.js";import"/src/js/htmlContent/mainModal.js";import"/src/js/htmlContent/alertModal.js";let modal=document.querySelector(".modal"),showCounter=document.querySelector(".showCounter"),btn=document.getElementById("myBtn"),span=document.getElementsByClassName("close")[0],closeAlert=document.getElementsByClassName("closeAlert")[0],counter="0";const mainAlert=document.querySelector(".modalAlert"),mainSection=(btn.onclick=function(){modal.style.display="block",counter++,localStorage.setItem("someVarKey",counter),showCounter.textContent=`You clicked ${counter} times`,5<=counter&&(console.log(mainAlert),mainAlert.style.display="block",counter=0,modal.style.display="none")},counter=localStorage.getItem("someVarKey"),closeAlert.onclick=function(){mainAlert.style.display="none"},window.onclick=function(e){e.target===mainAlert&&(mainAlert.style.display="none"),span.onclick=function(){modal.style.display="none",mainAlert.style.display="none"},window.onclick=function(e){e.target===modal&&(modal.style.display="none")}},console.log("alert modalalllll"),document.querySelector("#mainSection")),mainModal=(mainSection.insertAdjacentHTML("beforeend",`                                      
+
+    <!-- your HTML goes here -->                                                         
+<div id="myModal" class="modalAlert">
+
+  <!-- Modal content -->
+  <div class="modal-content-alert modal-content">
+    <span class="closeAlert spanAlert close">
+    <button class="closeBtn">close window</button>
+</span>
+    <p class="alert">Alert...
+   
+   
+    </p>
+     <span class="alertText">
+    
+     You clicked 5 times 
+    <br>
+    
+    counter will reset
+</span>
+  </div>
+
+</div>                                                                    
+`),console.log("mainModal"),document.querySelector("#mainModal")),mainSection=(mainSection.insertAdjacentHTML("beforeend",`                                      
 
     <!-- your HTML goes here -->    
              <!-- Trigger/Open The Modal -->
-<button id="myBtn">Open Modal</button>
+ <div class="mainBtn">
+    <button id="myBtn">Click me!</button>
+</div>
+
 
 
 <!-- The Modal -->
@@ -11,7 +38,7 @@ import"/src/js/htmlContent/mainSection.js";import"/src/js/htmlContent/mainModal.
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <p class="alert">Alert...</p>
     <p class="showCounter"></p>
   </div>
 
