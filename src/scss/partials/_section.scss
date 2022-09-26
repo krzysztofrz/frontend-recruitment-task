@@ -1,36 +1,172 @@
 //****** MAIN SECTION ******
 
+.section{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 .main {
-
   font-family: $primary-font, sans-serif;
+  display: flex;
+  flex-direction: column;
 
-  .sectionImg img{
-    width: 100%;
 
+
+  @media (min-width: $tabletSmall){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+
+  }
+  @media (min-width: $tabletBig){
+
+    margin: 50px
+
+  }
+  @media (min-width: $desktopSmall){
+
+    margin: 70px
+
+  }
+
+
+
+
+
+  .img480, .img720, .img1002, .img1400 {
+  display: none;
+}
+
+    .sectionImg {
+      width: 100%;
+      img{
+        width: 100%;
+      }
+      @media(min-width: $tabletSmall ){
+        width: 50%;
+        overflow: hidden;
+        display: flex;
+        margin-right: 30px;
+
+        img{
+          width: 80%;
+          align-items: center;
+
+        }
+      }
+
+
+
+      @media (min-width: $tabletSmall){
+        .img200, .img480, .img1002, .img1400 {
+          display: none;
+        }
+        .img720 {
+          display: block;
+          width: 100%;
+          margin: 40px;
+
+
+        }
+      //flex: 1;
+
+      }
+      @media (min-width: $tabletBig){
+        .img720 {
+          display: none;
+        }
+        .img1002 {
+          display: block;
+          width: 100%;
+          margin: 40px;
+
+        }
+      }
+    }
+
+
+
+
+
+
+  @media (min-width: $tabletSmall){
+    .sectionContent {
+      flex: 1;
+
+    }
   }
 
   .contentTitle{
     text-align: center;
+
     margin: 30px;
     font-weight: 700;
+    @media (min-width: $tabletSmall){
+
+      font-size: 26px;
+      margin-top: 75px;
+      text-align: left;
+    }
+    @media (min-width: $tabletBig){
+      font-size: 36px;
+    }
+    @media (min-width: $desktopSmall){
+      font-size: 42px;
+    }
   }
 
   .contentText{
     text-align: center;
+
     font-size: 20px;
-    margin: 0 20px
+    margin: 0 20px;
+
+    @media (min-width: $tabletSmall){
+      text-align: left;
+        font-size: 14px;
+      margin: 30px;
+
+    }
+    @media (min-width: $tabletBig){
+      font-size: 22px;
+    }
+    @media (min-width: $desktopSmall){
+      font-size: 24px;
+    }
   }
+
+}
+
+.sectionContentContainer{
+  display: flex;
+  flex-direction: column;
 
 }
 
 .mainBtn{
   display: flex;
   justify-content: center;
+  @media (min-width: $tabletSmall){
+    padding: 0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    //float: left;
+    justify-content: flex-start;
+
+  }
 }
 #myBtn{
   width: 160px;
   height: 60px;
+  @media (min-width: $tabletSmall){
+
+    width: 120px;
+    height: 40px;
+
+
+  }
 
   /* Button Text */
 
@@ -115,4 +251,10 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+ .image {
+  height: 200px;
+  width: 200px;
+  display: block;
 }

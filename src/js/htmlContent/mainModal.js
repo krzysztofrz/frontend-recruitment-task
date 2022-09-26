@@ -5,9 +5,9 @@ mainSection.insertAdjacentHTML('beforeend', `
 
     <!-- your HTML goes here -->    
              <!-- Trigger/Open The Modal -->
- <div class="mainBtn">
-    <button id="myBtn">Click me!</button>
-</div>
+<!-- <div class="mainBtn">-->
+<!--    <button id="myBtn">Click me!</button>-->
+<!--</div>-->
 
 
 
