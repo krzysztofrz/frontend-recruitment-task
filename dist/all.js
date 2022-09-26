@@ -24,11 +24,7 @@ import"/src/js/htmlContent/mainSection.js";import"/src/js/htmlContent/mainModal.
 </div>                                                                    
 `),console.log("mainModal"),document.querySelector("#mainModal")),mainSection=(mainSection.insertAdjacentHTML("beforeend",`                                      
 
-    <!-- your HTML goes here -->    
-             <!-- Trigger/Open The Modal -->
-<!-- <div class="mainBtn">-->
-<!--    <button id="myBtn">Click me!</button>-->
-<!--</div>-->
+
 
 
 
@@ -57,17 +53,7 @@ import"/src/js/htmlContent/mainSection.js";import"/src/js/htmlContent/mainModal.
             <img class="img1400" src="../../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg" alt="sunset on the beach">
 
         </div>
-        <div class="sectionContent">
-<!--            <div class="sectionContentContainer">-->
-                <h1 class="contentTitle">Beautiful sunset</h1>
-                <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, atque eos esse fugit obcaecati pariatur porro quibusdam repudiandae temporibus voluptatibus.</p>
-    
-                <div class="mainBtn">
-                <button id="myBtn">Click me!!!</button>
-                </div>
-<!--            </div>-->
-        </div>
-    </main>  
-</section>                                     
+ 
+                                   
                                                                                 
 `);

@@ -10,36 +10,25 @@
   display: flex;
   flex-direction: column;
 
-
-
   @media (min-width: $tabletSmall){
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
-
   }
+
   @media (min-width: $tabletBig){
-
     margin: 50px
-
   }
+
   @media (min-width: $desktopSmall){
-
     margin: 70px
-
   }
-
-
-
-
 
   .img480, .img720, .img1002, .img1400 {
   display: none;
 }
 
-    .sectionImg {
+  .sectionImg {
       width: 100%;
       img{
         width: 100%;
@@ -53,11 +42,8 @@
         img{
           width: 80%;
           align-items: center;
-
         }
       }
-
-
 
       @media (min-width: $tabletSmall){
         .img200, .img480, .img1002, .img1400 {
@@ -67,10 +53,7 @@
           display: block;
           width: 100%;
           margin: 40px;
-
-
         }
-      //flex: 1;
 
       }
       @media (min-width: $tabletBig){
@@ -81,30 +64,22 @@
           display: block;
           width: 100%;
           margin: 40px;
-
         }
       }
     }
 
-
-
-
-
-
   @media (min-width: $tabletSmall){
     .sectionContent {
       flex: 1;
-
     }
   }
 
   .contentTitle{
     text-align: center;
-
     margin: 30px;
     font-weight: 700;
-    @media (min-width: $tabletSmall){
 
+    @media (min-width: $tabletSmall){
       font-size: 26px;
       margin-top: 75px;
       text-align: left;
@@ -148,20 +123,19 @@
 .mainBtn{
   display: flex;
   justify-content: center;
+
   @media (min-width: $tabletSmall){
     padding: 0;
     font-size: 14px;
     margin-bottom: 20px;
-    //float: left;
     justify-content: flex-start;
-
   }
 }
 #myBtn{
   width: 160px;
   height: 60px;
-  @media (min-width: $tabletSmall){
 
+  @media (min-width: $tabletSmall){
     width: 120px;
     height: 40px;
 
@@ -199,20 +173,12 @@
   border-radius: 32px;
   border: none;
 }
-@media (min-width: $smartphoneSmall){
-
-
-
-}
-
 
 //******** MODAL ******
 
 #myBtn{
   padding: 10px 15px;
 }
-
-
 
 /* The Modal (background) */
 .modal {

@@ -3,12 +3,6 @@ console.log("mainModal")
 const mainModal = document.querySelector('#mainModal');
 mainSection.insertAdjacentHTML('beforeend', `                                      
 
-    <!-- your HTML goes here -->    
-             <!-- Trigger/Open The Modal -->
-<!-- <div class="mainBtn">-->
-<!--    <button id="myBtn">Click me!</button>-->
-<!--</div>-->
-
 
 
 <!-- The Modal -->

@@ -18,7 +18,7 @@ mainSection.insertAdjacentHTML('beforeend', `
                 <p class="contentText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, atque eos esse fugit obcaecati pariatur porro quibusdam repudiandae temporibus voluptatibus.</p>
     
                 <div class="mainBtn">
-                <button id="myBtn">Click me!!!</button>
+                <button id="myBtn">Click me </button>
                 </div>
 <!--            </div>-->
         </div>
